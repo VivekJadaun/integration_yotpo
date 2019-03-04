@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config/etc/system_file.xsd">
+    <system>
+        <tab id="integrations" translate="label" sortOrder="10">
+            <label>Integrations</label>
+        </tab>
+        <section id="integrations" translate="label" sortOrder="10" showInDefault="0" showInWebsite="0" showInStore="1">
+            <label>Yotpo</label>
+            <tab>yotpo</tab>
+            <resource>Integrations_Yotpo::configurations</resource>
+            <group id="configurations" translate="label" type="select" showInDefault="0" showInWebsite="0" showInStore="1">
+                <label>Yotpo Reviews Configurations</label>
+                <field id="appkey" type="text" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>App key</label>
+                    <validate>required-entry</validate>
+                    <frontend_model></frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
