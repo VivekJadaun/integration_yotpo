@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="content">
+        <block name="yotpo.reviews" class="Integration\Yotpo\Block\Reviews" template="Integration_Yotpo::reviews.phtml"/>
+    </referenceContainer>
+    <!-- <referenceContainer name="content.bottom"> -->
+        <!-- <block name="reviews.bottomline" class="Integration\Yotpo\Block\BottomLine" template="Integration_Yotpo::bottom_line.phtml"/> -->
+    <!-- </referenceContainer> -->
+</page>

@@ -1,20 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config/etc/system_file.xsd">
     <system>
         <tab id="integrations" translate="label" sortOrder="10">
             <label>Integrations</label>
         </tab>
-        <section id="integrations" translate="label" sortOrder="10" showInDefault="0" showInWebsite="0" showInStore="1">
+        <section id="integrations" translate="label" sortOrder="20" showInDefault="0" showInWebsite="0" showInStore="1">
+            <class>separator-top</class>
             <label>Yotpo</label>
-            <tab>yotpo</tab>
-            <resource>Integrations_Yotpo::configurations</resource>
-            <group id="configurations" translate="label" type="select" showInDefault="0" showInWebsite="0" showInStore="1">
+            <tab>integrations</tab>
+            <resource>Integrations_Yotpo::yotpo</resource>
+            <group id="yotpo" translate="label" type="select" showInDefault="0" showInWebsite="1" showInStore="1">
                 <label>Yotpo Reviews Configurations</label>
-                <field id="appkey" type="text" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="appkey" type="text" sortOrder="10" translate="label" showInDefault="1" showInWebsite="0" showInStore="1">
                     <label>App key</label>
                     <validate>required-entry</validate>
-                    <frontend_model></frontend_model>
+                    <backend_model>Integration\Yotpo\Model\Config\Backend\ValidateSettings</backend_model>
+                    <comment><![CDATA[Get your appkey at your yotpo account setting page. Click
+                        <a href="https://my.yotpo.com/register?utm_source=customers_magento_admin&utm_medium=link&utm_campaign=magento_admin_signin_link" target="_blank" title="yotpo-sign-up">here</a>
+                        to sign in to yotpo]]>
+                    </comment> 
+                </field>
+                <field id="secret" type="text" sortOrder="20" translate="label" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Secret</label>
+                    <validate>required-entry</validate>
+                    <backend_model>Integration\Yotpo\Model\Config\Backend\ValidateSettings</backend_model>
+                    <comment><![CDATA[Get your secret at your yotpo account setting page. Click
+                        <a href="https://my.yotpo.com/register?utm_source=customers_magento_admin&utm_medium=link&utm_campaign=magento_admin_signin_link" target="_blank" title="yotpo-sign-up">here</a>
+                        to sign in to yotpo]]>
+                    </comment> 
                 </field>
             </group>
         </section>

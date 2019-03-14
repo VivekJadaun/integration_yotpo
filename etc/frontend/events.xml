@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Magento\etc\events.xsd">
+    <event name="review_save_after">
+        <observer 
+            name="yotpo_review" 
+            instance="Integration\Yotpo\Observer\Review" />
+    </event>
+</config>

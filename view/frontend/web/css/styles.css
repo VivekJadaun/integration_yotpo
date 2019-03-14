@@ -1,0 +1,52 @@
+.body {
+    /*overflow: hidden !important;*/
+}
+
+.review-content-box {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    height: auto !important;
+    max-height: 500px;
+    overflow: auto !important;
+}
+
+.content-holder {
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px; 
+}
+
+.sku {
+    font-size: 14px !important;
+}
+
+.title {
+    font-size: 14px !important;
+}
+
+.ratings {
+    font-size: 14px !important;
+}
+
+.reviewer {
+    font-size: 12px !important;
+    color: #f20d10;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.content {
+
+}
+
+.description {
+    padding-left: 5px; 
+    padding-right: 5px; 
+    display: flex;
+    justify-content: left;
+    background-color: #f4f4f4;
+    font-size: 14px !important;
+    vertical-align: middle;
+}
